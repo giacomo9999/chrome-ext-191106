@@ -11,6 +11,17 @@
 
 // document.addEventListener("DOMContentLoaded", ready);
 
+// var blueButton = document.createElement("BUTTON");
+// blueButton.innerHTML = "Blue";
+
+// let blueButton = document.querySelector("#blueButton")
+
+// // blueButton.addEventListener("click", myFunction);
+
+// function myFunction() {
+//   console.log("I am blue");
+// }
+
 const ps = document.querySelectorAll("p");
 // const divs = document.querySelectorAll("div");
 // const h1s = document.querySelectorAll('h1');
@@ -21,8 +32,7 @@ function arrayMaker(tags) {
     let text = ps[i].innerHTML; // that's a string;
     text = text.replace("release", "Pikachu");
     ps[i].innerHTML = text;
-    window.stop()
-    ;
+    window.stop();
   }
 }
 
