@@ -9,20 +9,20 @@
 
 // const divs = document.querySelectorAll("div");
 
+// document.addEventListener("DOMContentLoaded", ready);
+
 const ps = document.querySelectorAll("p");
 // const divs = document.querySelectorAll("div");
 // const h1s = document.querySelectorAll('h1');
 // const h2s = document.querySelectorAll('h2')
 
-const arrayOfPs = [];
-// const arrayOfDivs = [];
-// const arrayOfH1s = [];
-// const arrayOfH2s = [];
-
 function arrayMaker(tags) {
-  for (let i = 0; i < ps.length-1; i++) {
-    // console.log(`${tags}`, i)
-    console.log(tags[i]);
+  for (let i = 0; i < ps.length; i++) {
+    let text = ps[i].innerHTML; // that's a string;
+    text = text.replace("release", "Pikachu");
+    ps[i].innerHTML = text;
+    window.stop()
+    ;
   }
 }
 
