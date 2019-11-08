@@ -12,3 +12,7 @@ function changeTest(e){
 // }
 }
 
+document.getElementById('myP').style.cursor = "pointer"
+
+// from manifest.json:
+// "default_popup": "index.html"
